@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Alvi Cloeh Senamin | Web Developer Portfolio </title>
+	<!-- google fonts and the link form 
+		Google fonts using ctrl + shift V to aligned the indenation codes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+	<!-- to add an HTML comment: ctrl + shift + / -->
+	<!-- HTML Comments are notes we can add to our HTML file.
+	These notes are not shown in the webpage.
+		Terms:
+				mr-auto = margin right auto
+				ml-auto = margin left auto
+				mx-auto = (center) or left and right auto -->
+
+
+	<!-- bootstrap navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		
+		<button class ="navbar-toggler" type="button" data-toggle="collapse" 
+		data-target="#portfolio-nav">
+			<span class="navbar-toggler-icon"> </span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="portfolio-nav">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a href="#landing" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#gallery" class="nav-link">Gallery</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<!-- container for layout : creates a wrapper/container for our layout
+		-add class text-center to centered the text 
+		-add jumbotron to add padding and margin
+		-add bg-primary for background color 
+			(primary = blue, danger = red, transparent = transparent )
+		https://getbootstrap.com/docs/4.6/components/alerts/
+	    https://getbootstrap.com/docs/4.0/utilities/colors/
+
+	    Terms:
+		px = dots in screen
+		rem = root element (rem measurement based on the default root element of html 16px)
+		em = font size of parent element
+		mt-5 = grade number 5 when it comes to spacing and padding is equal roughly to 3rem so multiply by 16px = 48pixel. Means theres a margin on top roughly 48px
+		vh = view port height. Based on the percentage of screen so if full screen thats 100% view port height
+		Spacing documentation : https://getbootstrap.com/docs/4.6/utilities/spacing/
+	-->
+	
+	<div class="container-fluid" >
+		  <section id="landing" class="text-center jumbotron bg-transparent mt-5">
+		  	<h1>Alvi Cloeh Senamin</h1>
+		  	<p>Hi! My name is Alvi Senamin and I love building things
+		  	from scratch.</p>
+		  	<!-- Get a picture or a copy of picture of you and save it in our images folder. 
+				 
+				 Make sure that the picture is at least square in shape.
+
+				 file format jpeg or png
+
+				 div = you can think of it as a box
+		  	-->
+		  	<img src="./images/Senamin.jpg"/>
+		  </section>
+		  <!-- end of landing -->
+		  <section id="gallery" class="text-center bg-dark text-white">
+		  	<div class="tools">
+		  		<h2>Languages I Speak</h2>
+		  		<ul>
+		  			<li>HTML</li>
+		  			<li>CSS</li>
+		  		</ul>
+		  	</div>
+		  	<div class="tools">
+		  		<h2>Tools I Use</h2>
+		  		<ul>
+		  			<li>Git Bash/Terminal</li>
+		  			<li>Sublime Text</li>
+		  			<li>Github</li>
+		  			<li>Google Chrome</li>
+		  		</ul>
+		  	</div>
+		  	
+		  </section>
+		  <!-- end of gallery -->
+	</div>
+
+	<!-- Bootstrap Javascript -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>

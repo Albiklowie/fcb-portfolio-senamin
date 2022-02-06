@@ -1,0 +1,65 @@
+/* 
+	to add CSS comments CTRL+Shirt+/
+	CSS - Cascading stylesheet - it used to style/design our web pages.
+
+	use "*"/asterisk to select all the elements
+	sans-serif is the fallback font. Incase the google chrome didnt successfully load the font
+ 	HTML - Create Element
+	CSS - Design, Select and Define Element
+	Javascipt - interact with elements
+	# - id selector
+	. - class selector
+	margin = space outside the element
+	padding = space inside the element/box
+ */
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+h1,h2{
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+/*80vh or 80 view port height
+display fix to center the landing and its display contents*/
+#landing {
+	height: 80vh;
+	/*center the contents of landing horizontally and vertically
+	default direction is row*/
+	display : flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#gallery{
+	height: 75vh;
+	/*center the contents of gallery horizontally and vertically*/
+	display : flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+h2 {
+	color: #007bff;
+}
+.tools{
+	height: 200px;
+	border: 5px solid #f2f2f2;
+	padding: 25px;
+	margin: 20px;
+	width: 75%;
+}
